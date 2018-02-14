@@ -11,7 +11,7 @@ def convert_readme():
     return open('README.txt').read()
 
 setup(name='mongoadmin',
-    version='1.2.0',
+    version='1.2.1',
     description="A replacement for django's admin that works with mongodb.",
     author='Jan Schrewe',
     author_email='jan@schafproductions.com',
@@ -35,5 +35,5 @@ setup(name='mongoadmin',
     long_description=convert_readme(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=['setuptools', 'django>=1.3', 'mongoengine>=0.6', 'django-mongodbforms==0.3.1',],
+    install_requires=['setuptools', 'django>=1.3', 'mongoengine>=0.6', 'mongodbforms>=1.3.1',],
 )
